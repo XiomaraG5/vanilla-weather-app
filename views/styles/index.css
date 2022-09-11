@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@300&display=swap');
+@import url('./carousel.css');
+@import url('./cardsWeather.css');
+@import url('./Modal.css');
+:root{
+    --fontDecoration: 'Finger Paint',cursive;
+    --fontText: 'Lemonada',cursive;
+    --mainColor: #F0F2EF;
+    --blue-light: #CED8E3;
+    --blue-dark: #78A9AA;
+    --green-dark: #658463;
+    --gray-light: #676767;
+    --Gray-dark: #4A4A4A;
+    --cyan: #E8F0F5;
+    --btnsTransp: #78A9AAe5;
+    --clearGreen: #78A9AA25;
+    --bgCoverOpacity: #4A4A4Af8;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    z-index: 3;
+}
+body{
+    background-color: var(--mainColor);
+}
+.main{
+    display: flex;
+    gap: 5%;
+    min-height: 100vh;
+    flex-direction: column;
+    position: relative;
+    background-color: var(--mainColor);
+    z-index: 1;
+}
+.blueBox{
+    position: absolute;
+    z-index: 2;
+    height: 60vh;
+    width: 15%;
+    background-color: var(--blue-light);
+}
+
+.search{
+    margin: 5% 0% 0% 3%;
+    background-color: var(--cyan);
+    width: 25%;
+    display: flex;
+    padding: 0% 0% 0% 1%;
+    border-radius: 5px;
+    box-shadow: 1px 2px 1px inset var(--green-dark);
+
+}
+.search input{
+    background-color: transparent;
+    width: 90%;
+    border: none;
+    outline: none;
+    font-family: var(--fontText);
+    font-size: 12px;
+}
+.search button{
+    background-color: var(--blue-dark);
+    color: var(--mainColor);
+    outline: none;
+    border: none;
+    padding: 3%;
+    border-radius: 2px;
+}
+
+.search i{
+   margin-top: 5px;
+   font-size: 15px;
+}
+.noData__h3{
+    font-family: var(--fontDecoration);
+    color: var(--green-dark);
+    font-weight: 100;
+    margin-left: 5%;
+    font-size: 16px;
+}
+.noData__p{
+    margin: auto;
+    text-align: center;
+    font-family: var(--fontText);
+    width: 80%;
+    margin-top: 5%;
+}
+.imgSearch{
+    display: flex;
+    margin: auto;
+}
+.h5{
+    margin: 10px;
+    font-family: var(--fontDecoration);
+    font-size: 12px;
+    color: var(--green-dark);
+}
+
+/* ----------------- MEDIAQUERY ----------------- */
+@media (min-width:802px) {
+
+    .h5{
+        margin: 20px;
+        font-size: 17px;
+    }
+}

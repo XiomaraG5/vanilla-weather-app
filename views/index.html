@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+</head>
+<body>
+    <main class="main">
+            <div class="blueBox"></div>
+        
+            <div class="search">
+                <input type="text" name="city" id="input" placeholder="Ciudad"/> 
+                <button class="btn" id="sentData"><i class="bi bi-search"></i></button>
+            </div>
+            <ul id="list">
+                
+            </ul>
+        <div class="Data" id="data">
+            <h3 class="noData__h3" id="date"></h3>
+
+            <p class="noData__p"> Utiliza el buscador para  encontrar el clima actual del lugar que deseas consultar </p>
+        </div>
+
+        <img src="./assets/world.png" alt="img" width="250px" class="imgSearch" id="imgNoData" >
+    </main>
+    <div class="containerModal" id="containerModal">
+        <div class="containerModal_body" id="containerModal_body">
+           
+
+        </div>
+    </div>
+    <script src="../scripts/index.js" type="module"></script>
+    <!-- JavaScript Bundle with Popper -->
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+
+.Mcarousel{
+    width: 90%;
+    display: flex;
+    border-radius: 5px;
+    margin: auto;
+    overflow: hidden;
+    height: auto;
+    position: relative;
+    /* background-color: var(--blue-dark); */
+}
+.carousel-content{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: fit-content;
+    transition-delay: 0ms;
+}
+.controlNext, .controlPrev{
+    position: absolute;
+    height: 100%;
+    border: none;
+    outline: none;
+    background-color: var(--btnsTransp);
+    z-index: 10;
+    padding-left: 1%;
+    padding-right: 1%;
+    color: var(--green-dark);
+    cursor: pointer;
+}
+.controlNext:hover ,.controlPrev:hover {
+    color: var(--mainColor);
+}
+.controlNext{
+    left: 93%;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    box-shadow: 0.5px 0.5px 1px 0.5px var(--blue-dark) inset;
+    border-radius: 5px;
+    font-size: 10px;
+    font-family: var(--fontText);
+    text-align: center;
+    height: 100px;
+    width: 70px;
+}
+.text{
+    margin-top: -10%;
+}
+.text:last-child{
+    margin-top: -5%;
+}
+
+
+/* ----------------- MEDIAQUERY ----------------- */
+
+
+@media (min-width:365px) {
+    .controlNext{
+        left: 95%;
+    }
+}
+@media (min-width:612px) {
+    .controlNext {
+        font-size: 18px;
+        left: 96%;
+    }
+    .controlPrev{
+        font-size: 18px;
+    }
+    .item{
+        width: 20vmin;
+        height: 20vmin;
+        font-size: 15px;
+    }
+    .Mcarousel{
+        height: 20vmin;
+    }
+}
+@media (min-width:802px) {
+    .controlNext {
+        left: 96.5%;
+    }
+    .item {
+        width: 15vmin;
+        height: 15vmin;
+        font-size: 15px;
+    }
+    .Mcarousel {
+        height: 15vmin;
+    }
+}
